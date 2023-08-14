@@ -21,6 +21,6 @@ mongoose
   .connect(
     "mongodb+srv://tn-school-audit-admin:Mongodbadmin12@cluster0.807ootn.mongodb.net/?retryWrites=true&w=majority"
   )
-  .then(() => app.listen(5000))
+  .then(() => app.listen(3000))
   .then(() => console.log("DB connection successful"))
   .catch((error) => console.log(error));
