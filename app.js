@@ -3,7 +3,7 @@
 //mongodb+srv://tn-school-audit-admin:Mongodbadmin12@cluster0.807ootn.mongodb.net/?retryWrites=true&w=majority
 
 import express from "express";
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
 import auditRouter from "./routes/audit-routes";
 import cors from "cors";
 
