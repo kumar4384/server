@@ -8,23 +8,25 @@ import auditRouter from "./routes/audit-routes";
 import cors from "cors";
 
 const app = express();
-console.log("starting.....");
-let corsOptions = {
-  origin: "http://localhost:4200",
-  optionSuccessStatus: 200,
-};
-app.use(cors(corsOptions));
 
-app.use(express.json());
-app.use("/audit", auditRouter);
+app.listen(3000, () => console.log("App is listening"));
+// console.log("starting.....");
+// let corsOptions = {
+//   origin: "http://localhost:4200",
+//   optionSuccessStatus: 200,
+// };
+// app.use(cors(corsOptions));
 
-mongoose.connect("mongodb://localhost/tn-school-audit")
-.then(() => console.log("DB connection successful"))
-.catch((error) => console.log("error while connecting DB===>"+error));
+// app.use(express.json());
+// app.use("/audit", auditRouter);
 
-app.listen(3000, '127.0.0.1', () => {
-  console.log("server is up");
-});
+// mongoose.connect("mongodb://localhost/tn-school-audit")
+// .then(() => console.log("DB connection successful"))
+// .catch((error) => console.log("error while connecting DB===>"+error));
+
+// app.listen(3000, '127.0.0.1', () => {
+//   console.log("server is up");
+// });
 
 // mongoose
 //   .connect(
