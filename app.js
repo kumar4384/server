@@ -8,7 +8,7 @@ import auditRouter from "./routes/audit-routes";
 import cors from "cors";
 
 const app = express();
-
+console.log("starting.....");
 let corsOptions = {
   origin: "http://localhost:4200",
   optionSuccessStatus: 200,
