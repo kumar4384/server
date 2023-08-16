@@ -30,6 +30,6 @@ app.listen(3000, () => {
 //   .connect(
 //     "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.10.5"
 //   )
-//   .then(() => app.listen(3000, '127.0.0.1'))
+//   .then(() => app.listen(3000))
 //   .then(() => console.log("DB connection successful"))
 //   .catch((error) => console.log(error));

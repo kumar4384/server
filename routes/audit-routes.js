@@ -1,9 +1,11 @@
 import express from "express";
-import { getSchoolAuditData, addSchoolDetails } from "../controllers/school-audit-controller";
+import { getSchoolAuditData, addSchoolDetails, updateSchoolDetails, deleteSchoolDetails } from "../controllers/school-audit-controller";
 
 const auditRouter = express.Router();
 
 auditRouter.get("", getSchoolAuditData);
 auditRouter.post("/add", addSchoolDetails);
+auditRouter.put("/update/:id", updateSchoolDetails);
+auditRouter.delete("/:id", deleteSchoolDetails);
 
 export default auditRouter;

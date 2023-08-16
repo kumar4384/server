@@ -58,3 +58,42 @@ export const addSchoolDetails = async (req, res, next) => {
   return res.status(201).json({ schoolDetails });
 
 };
+
+export const updateSchoolDetails = async (req, res, next) => {
+  const { title, description } = req.body;
+  console.log(title);
+  console.log(description);
+  const blogId = req.params.id;
+  console.log(blogId);
+  let blog;
+  try {
+    blog = await Blog.findByIdAndUpdate(blogId, {
+      title,
+      description,
+    });
+  } catch (error) {
+    return console.log(error);
+  }
+
+  if (!blog) {
+    return res.status(500).json({ message: "Unable to update the blog" });
+  }
+
+  return res.status(200).json({ blog });
+};
+
+export const deleteSchoolDetails = async (req, res, next) => {
+  const id = req.params.id;
+  let schoolDetails;
+  try {
+    schoolDetails = await School.findByIdAndRemove(id);
+  } catch (error) {
+    return console.log(error);
+  }
+
+  if (!schoolDetails) {
+    return res.status(500).json({ message: "Unable to delete the school details" });
+  }
+
+  return res.status(200).json({ schoolDetails });
+};
