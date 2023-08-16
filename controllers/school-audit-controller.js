@@ -1,5 +1,4 @@
-import mongoose from "mongoose";
-import School from "../models/School";
+import School from "../models/School.js";
 
 export const getSchoolAuditData = async (req, res, next) => {
   let schoolAuditData;

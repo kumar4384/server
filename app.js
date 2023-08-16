@@ -4,7 +4,7 @@
 
 import express from "express";
 import mongoose from "mongoose";
-import auditRouter from "./routes/audit-routes";
+import auditRouter from "./routes/audit-routes.js";
 import cors from "cors";
 
 const app = express();

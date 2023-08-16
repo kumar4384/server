@@ -1,5 +1,5 @@
 import express from "express";
-import { getSchoolAuditData, addSchoolDetails, updateSchoolDetails, deleteSchoolDetails } from "../controllers/school-audit-controller";
+import { getSchoolAuditData, addSchoolDetails, updateSchoolDetails, deleteSchoolDetails } from "../controllers/school-audit-controller.js";
 
 const auditRouter = express.Router();
 
