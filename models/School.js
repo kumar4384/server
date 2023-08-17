@@ -13,6 +13,9 @@ const schoolSchema = new Schema({
   district: {
     type: String,
   },
+  educationalDistrict: {
+    type: String,
+  },
   headmasterName: {
     type: String,
   },
