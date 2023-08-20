@@ -30,7 +30,7 @@ export const addSchoolDetails = async (req, res, next) => {
     studentsStrength,
     teachersStrength,
     clericalStrength,
-    lastAuditingYear,
+    lastAuditingPeriod,
     lastAuditingDate,
   } = req.body;
 
@@ -47,8 +47,8 @@ export const addSchoolDetails = async (req, res, next) => {
     studentsStrength,
     teachersStrength,
     clericalStrength,
-    lastAuditingDate,
-    lastAuditingYear
+    lastAuditingPeriod,
+    lastAuditingDate
   });
 
   try {

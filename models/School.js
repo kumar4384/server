@@ -37,7 +37,7 @@ const schoolSchema = new Schema({
   clericalStrength: {
     type: String,
   },
-  lastAuditingYear: {
+  lastAuditingPeriod: {
     type: String,
   },
   lastAuditingDate: {
